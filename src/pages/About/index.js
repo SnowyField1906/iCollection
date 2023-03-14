@@ -3,14 +3,14 @@ import videoBackground from './../../assets/videos/videoBackground.mp4';
 
 function About() {
     useEffect(() => {
-        document.title = "icollection - About"
+        document.title = "iCollection - About"
     }, [])
     return (
         <div className='grid grid-cols-2 h-screen overflow-hidden select-none w-full px-[3%]'>
             <div className='relative grid justify-between self-center justify-self-center w-11/12 px-[2%] h-5/6 backdrop-blur-xl bg-white/50 dark:bg-black/50 rounded-2xl translate-y-10 z-10 main-overflow'>
                 <div className='w-full grid'>
                     <p className='absolute text-center text-huge top-8'>
-                        icollection Introduction
+                        iCollection Introduction
                     </p>
                 </div>
                 <div className='absolute top-24  grid place-content-start'>

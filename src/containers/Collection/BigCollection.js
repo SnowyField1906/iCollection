@@ -137,7 +137,7 @@ function BigCollection({ address, collection, collectionInfo, nfts, setBigCollec
                                 </div>
                                 <div className="flex justify-between place-items-center w-3/4 h-14 button-light rounded-tr-xl border-y border-r border-black/30 dark:border-white/30">
                                     <Link className="pl-4 cursor-pointer text-black dark:text-white hover:underline"
-                                        to={"/icollection/p/" + collection.split('/')[0]} >
+                                        to={"/iCollection/p/" + collection.split('/')[0]} >
                                         {collection.split('/')[0]}
                                     </Link>
                                     <svg className="w-7 h-7 mr-4 cursor-pointer fill-black/30 dark:fill-white/30 hover:fill-black/50 dark:hover:fill-white/50"
@@ -215,7 +215,7 @@ function BigCollection({ address, collection, collectionInfo, nfts, setBigCollec
                             </>
                             }
                             <Link className='col-start-1 col-end-3 flex h-14 w-11/12 button-medium rounded-xl'
-                                to={"/icollection/p/" + collection} >
+                                to={"/iCollection/p/" + collection} >
                                 <div className="self-center mx-1">
                                     <Expand />
                                 </div>

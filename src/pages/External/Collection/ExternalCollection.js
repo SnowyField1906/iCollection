@@ -42,7 +42,7 @@ function ExternalProfile({ account, target }) {
   useEffect(() => {
     infoAwait();
     nftsAwait();
-    document.title = "icollection - " + collectionInfo[0]
+    document.title = "iCollection - " + collectionInfo[0]
   }, [])
 
 

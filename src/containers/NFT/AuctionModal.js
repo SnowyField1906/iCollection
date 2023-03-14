@@ -59,7 +59,7 @@ function AuctionModal({ address, nft, nftInfo, requests, setAuctionModal }) {
                                 return (
                                     <p className='ml-8 mt-5 text-black dark:text-white'>{i + 1}. &nbsp;
                                         <Link className='cursor-pointer hover:underline'
-                                            to={"/icollection/p/" + request}>{request}</Link>
+                                            to={"/iCollection/p/" + request}>{request}</Link>
                                     </p>
                                 )
                             })

@@ -25,7 +25,7 @@ function Nagivator({ account, setAccount }) {
 	const navigate = useNavigate();
 	const logout = () => {
 		setAccount({ address: '', wallet: null })
-		navigate('icollection/')
+		navigate('iCollection/')
 	}
 
 
@@ -33,7 +33,7 @@ function Nagivator({ account, setAccount }) {
 
 	const pageTag = (i) => {
 		const Tag = Pages[pagesList.Sub[i]];
-		return <Tag active={`/icollection/${pagesList.Sub[i].toLowerCase().slice(0, 1)}` === location.pathname.slice(0, 8)} />;
+		return <Tag active={`/iCollection/${pagesList.Sub[i].toLowerCase().slice(0, 1)}` === location.pathname.slice(0, 8)} />;
 	};
 
 	const [open, setOpen] = useState('');
@@ -75,10 +75,10 @@ function Nagivator({ account, setAccount }) {
 		rounded-b-xl backdrop-blur-lg bg-white/50 dark:bg-black/50">
 					<div className="flex w-[15%] justify-center">
 						<Link
-							to="icollection/"
+							to="iCollection/"
 							className="text-center font-sans font-bold text-4xl hover:scale-110 transform transition duration-300 bg-clip-text text-transparent bg-gradient-to-br from-blue-700 dark:from-blue-400 to-violet-700 dark:to-violet-400"
 						>
-							icollection
+							iCollection
 						</Link>
 					</div>
 
@@ -87,7 +87,7 @@ function Nagivator({ account, setAccount }) {
 						{pagesList.Main.map((_, i) => {
 							return (
 								<NavLink
-									to={`icollection/${pagesList.Main[i].toLowerCase().slice(0, 1)}/`}
+									to={`iCollection/${pagesList.Main[i].toLowerCase().slice(0, 1)}/`}
 									className={({ isActive }) =>
 										isActive
 											? "text-xl text-indigo-800 dark:text-indigo-200 font-semibold bg-bottom bg-gradient-to-r from-indigo-800 dark:from-indigo-200 to-indigo-800 dark:to-indigo-200 bg-no-repeat bg-[length:100%_3px]"
@@ -108,7 +108,7 @@ function Nagivator({ account, setAccount }) {
 								{pagesList.Sub.map((_, i) => {
 									return (
 										<NavLink
-											to={`icollection/${pagesList.Sub[i].toLowerCase().slice(0, 1)}/${i === 1 ? account.wallet ? account.wallet.getAddress() : account.address : ''}`}
+											to={`iCollection/${pagesList.Sub[i].toLowerCase().slice(0, 1)}/${i === 1 ? account.wallet ? account.wallet.getAddress() : account.address : ''}`}
 											className="flex w-[7.5rem] h-[2.75rem] cursor-pointer justify-center"
 										>
 											{pageTag(i)}
@@ -146,7 +146,7 @@ function Nagivator({ account, setAccount }) {
 					{!account.address &&
 						<p className="w-[45%] text-center text-xl text-slate-800 dark:text-slate-200">Please
 							<Link
-								to="icollection/"
+								to="iCollection/"
 								className="px-2 text-center font-semibold bg-clip-text text-slate-900 dark:text-slate-100 hover:text-transparent hover:bg-gradient-to-br hover:from-blue-700 hover:dark:from-blue-400 hover:to-violet-700 hover:dark:to-violet-400"
 							>
 								LOGIN

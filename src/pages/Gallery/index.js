@@ -38,7 +38,7 @@ function Gallery({ account }) {
 
 
   useEffect(() => {
-    document.title = "icollection - NFT Gallery"
+    document.title = "iCollection - NFT Gallery"
     const keys = Object.keys(collectionObject)
     keys.sort((a, b) => collectionObject[b][rawSort[0]] - collectionObject[a][rawSort[0]])
     rawSort[1] && keys.reverse()

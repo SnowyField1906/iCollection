@@ -48,7 +48,7 @@ function LoadWallet({ setTag, account, setAccount }) {
     }
 
     if (account.address) {
-        return <Navigate to="/icollection/h/" />
+        return <Navigate to="/iCollection/h/" />
     }
 
 

@@ -51,7 +51,7 @@ function Profile({ account }) {
 
 
   useEffect(() => {
-    document.title = "icollection - Your Profile"
+    document.title = "iCollection - Your Profile"
 
     const getBalance = async () => {
       const balance = await iconService.getBalance(address).execute();
@@ -80,7 +80,7 @@ function Profile({ account }) {
 
   if (!address) {
     return (
-      <Navigate to="/icollection" />
+      <Navigate to="/iCollection" />
     )
   }
 

@@ -36,7 +36,7 @@ function Explore({ account }) {
     })
   }
   useEffect(() => {
-    document.title = "icollection - Explore NFTs"
+    document.title = "iCollection - Explore NFTs"
     nftObjectAwaits();
   }, [rawSort, rawFilter])
 

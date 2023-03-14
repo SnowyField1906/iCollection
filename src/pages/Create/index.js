@@ -23,7 +23,7 @@ function Create({ account }) {
   const [status, setStatus] = useState();
 
   useEffect(() => {
-    document.title = "icollection - Create NFT";
+    document.title = "iCollection - Create NFT";
   }, []);
 
   const uploadImage = (e) => {
@@ -70,7 +70,7 @@ function Create({ account }) {
 
   if (!address) {
     return (
-      <Navigate to="/icollection" />
+      <Navigate to="/iCollection" />
     )
   }
 

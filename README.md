@@ -24,7 +24,7 @@
 
 ### **1.3 Website URL**
 
-    https://SnowyField1906.github.io/icollection
+    https://SnowyField1906.github.io/iCollection
 
 ### **1.4 Requirements**
 
@@ -56,7 +56,7 @@
 
 <br/>
 
-## **2. icollection Introduction**
+## **2. iCollection Introduction**
 
 ### **- This web application is a platform for trading a special type of token.**
 
@@ -276,45 +276,45 @@
     <tr align="center">
         <td rowspan=5><b>Main pages</b></td>
         <td>Welcome</td>
-        <td>/icollection</td>
+        <td>/iCollection</td>
     </tr>
     <tr align="center">
         <td>Home</td>
-        <td>/icollection/h</td>
+        <td>/iCollection/h</td>
     </tr>
     <tr align="center">
         <td>Explore</td>
-        <td>/icollection/e</td>
+        <td>/iCollection/e</td>
     </tr>
     <tr align="center">
         <td>Gallery</td>
-        <td>/icollection/g</td>
+        <td>/iCollection/g</td>
     </tr>
         <tr align="center">
         <td>About</td>
-        <td>/icollection/a</td>
+        <td>/iCollection/a</td>
     </tr>
     <tr align="center">
         <td rowspan=3><b>Sub pages</b></td>
         <td>Create</td>
-        <td>/icollection/c</td>
+        <td>/iCollection/c</td>
     </tr>
     <tr align="center">
         <td>Profile</td>
-        <td>/icollection/p</td>
+        <td>/iCollection/p</td>
     </tr>
     <tr align="center">
         <td>Logs</td>
-        <td>/icollection/l</td>
+        <td>/iCollection/l</td>
     </tr>
     <tr align="center">
         <td rowspan=2><b>External pages</b></td>
         <td>External Profile</td>
-        <td>/icollection/p/<code>address</code></td>
+        <td>/iCollection/p/<code>address</code></td>
     </tr>
     <tr align="center">
         <td>External Collection</td>
-        <td>/icollection/p/<code>address</code>/<code>collection-name</code></td>
+        <td>/iCollection/p/<code>address</code>/<code>collection-name</code></td>
     </tr>
 </table>
 

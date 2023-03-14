@@ -88,7 +88,7 @@ function BigNFT({ address, nft, nftInfo, setBigNFT }) {
                                 </div>
                                 <div className="flex justify-between place-items-center w-3/4 h-12 button-light rounded-tr-xl border-y border-r border-black/30 dark:border-white/30">
                                     <Link className="pl-4 cursor-pointer text-black dark:text-white hover:underline"
-                                        to={"/icollection/p/" + nftInfo[0]} >
+                                        to={"/iCollection/p/" + nftInfo[0]} >
                                         {nftInfo[0]}
                                     </Link>
                                     <svg className="w-7 h-7 mr-4 cursor-pointer fill-black/30 dark:fill-white/30 hover:fill-black/50 dark:hover:fill-white/50"
@@ -182,7 +182,7 @@ function BigNFT({ address, nft, nftInfo, setBigNFT }) {
                                     return (
                                         <div className="flex justify-between place-items-center mt-2 w-full ">
                                             <Link className='text-center w-full ursor-pointer hover:underline text-black dark:text-white'
-                                                to={"/icollection/p/" + request}>{request}</Link>
+                                                to={"/iCollection/p/" + request}>{request}</Link>
                                             {/* {address === nftInfo[0] &&
                                                 <div className="flex justify-around place-items-center w-1/4 ">
                                                     <Approve />

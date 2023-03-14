@@ -63,26 +63,26 @@ function App() {
 				<Routes>
 					{allPagesList.map((_, i) => {
 						return (
-							<Route path={"icollection/" + (i ? allPagesList[i].toLowerCase().slice(0, 1) : '') + '/' + (
+							<Route path={"iCollection/" + (i ? allPagesList[i].toLowerCase().slice(0, 1) : '') + '/' + (
 								i === 6 ? (account.wallet ? account.wallet.getAddress() : account.address) : ''
 							)} element={pageTag(i)} />
 						);
 					})}
 					{users && users.map((user) => {
 						return (
-							<Route path={"icollection/p/" + user} element={
+							<Route path={"iCollection/p/" + user} element={
 								<ExternalProfile account={account} setAccount={setAccount} target={user} />
 							} />
 						);
 					})}
 					{collections && collections.map((collection) => {
 						return (
-							<Route path={"icollection/p/" + collection} element={
+							<Route path={"iCollection/p/" + collection} element={
 								<ExternalCollection account={account} setAccount={setAccount} target={collection} />
 							} />
 						);
 					})}
-					<Route path={"icollection/p/*/"} element={
+					<Route path={"iCollection/p/*/"} element={
 						<ExternalProfile account={account} setAccount={setAccount} />
 					} />
 				</Routes>

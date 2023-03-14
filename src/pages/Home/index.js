@@ -22,7 +22,7 @@ function Home({ account }) {
 
 
   useEffect(() => {
-    document.title = "icollection - Homepage"
+    document.title = "iCollection - Homepage"
     const nftsAwait = async () => {
       await sortedNFTs().then((res) => {
         setNFTObject(res)
@@ -54,7 +54,7 @@ function Home({ account }) {
 
         <div className='w-[90rem] h-[27rem] relative mb-20 justify-self-center translate-y-32 bg-contain bg-center bg-no-repeat overflow-hidden bg-home-picture-1 rounded-[4rem]'>
           <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[5rem] font-bold text-white border-2 p-5
-        drop-shadow-xl'>icollection</p>
+        drop-shadow-xl'>iCollection</p>
           <p className='absolute inset-x-0 bottom-5 text-4xl font-bold text-center text-white'>Welcome to the world of NFTs</p>
         </div>
 

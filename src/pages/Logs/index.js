@@ -24,7 +24,7 @@ function Logs({ account }) {
   }
 
   useEffect(() => {
-    document.title = "icollection - Activity History"
+    document.title = "iCollection - Activity History"
     notificationAwaits();
   }, [])
 

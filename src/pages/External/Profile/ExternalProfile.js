@@ -46,7 +46,7 @@ function ExternalProfile({ account, target }) {
     const [customCollections, setCustomCollections] = useState([])
 
     useEffect(() => {
-        document.title = "icollection - " + target
+        document.title = "iCollection - " + target
         const customCollectionsAwait = async () => {
             await getUserCustomCollections(target).then((res) => {
                 setCustomCollections(res)

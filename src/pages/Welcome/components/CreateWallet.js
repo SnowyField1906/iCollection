@@ -25,7 +25,7 @@ function CreateWallet({ wallet, setTag, account, setAccount }) {
                 wallet: wallet
             })
         return (
-            <Navigate to="/icollection/h/" />
+            <Navigate to="/iCollection/h/" />
         )
     }
 
@@ -33,7 +33,7 @@ function CreateWallet({ wallet, setTag, account, setAccount }) {
     const [view, setView] = useState(false)
 
     if (account.address) {
-        return <Navigate to="/icollection/h/" />
+        return <Navigate to="/iCollection/h/" />
     }
 
     return (
