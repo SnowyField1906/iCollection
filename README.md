@@ -1,14 +1,12 @@
-[![wakatime](https://wakatime.com/badge/user/30595099-02b3-44c9-9553-bfedf73678b0/project/20684b43-07ed-4fdb-9303-f240dac2202f.svg?style=for-the-badge)](https://wakatime.com/badge/user/30595099-02b3-44c9-9553-bfedf73678b0/project/20684b43-07ed-4fdb-9303-f240dac2202f)
-
 # **I. Introduction**
 
 ## **1. Overview**
 
 ### **1.1. Description**
 
-#### _- This is a large-scale project for DEVERA course, a huge marketplace with a comprehensive full range of features, an individual work by only me with 200-hour coding._
+#### _- This is a huge marketplace implementing a new type of token has a comprehensive full range of features._
 
-#### _- Supported by new-blockchain-platform **ICON** as backend, this full-stack decentralized application has incredibly fast transaction speed._
+#### _- Supported by new-blockchain-platform **ICON**, this full-stack decentralized application has incredibly fast transaction speed._
 
 ### **1.2. Built with**
 
@@ -60,7 +58,7 @@
 
 ## **2. icollection Introduction**
 
-### **- Combinated from NFT and ICONee, this web application is a platform for trading a special type of token.**
+### **- This web application is a platform for trading a special type of token.**
 
 - _Unlike **NFT** - **ICR3**, which can be minted into multiple copies, this token represents something particularly unique in the world (such as artworks, limited items, or even houses, etc.)_.
 - _The price can never be changed except for deletion or **Auction**._
