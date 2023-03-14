@@ -1,8 +1,8 @@
 {
-	"name": "iCollection",
+	"name": "icollection",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://snowyfield1906.github.io/iCollection/",
+	"homepage": "https://snowyfield1906.github.io/icollection/",
 	"dependencies": {
 		"@headlessui/react": "^1.7.3",
 		"@material-tailwind/react": "^1.2.4",
