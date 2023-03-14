@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .page-bg {
+    @apply grid h-max w-screen justify-items-center overflow-x-hidden   min-h-screen;
+  }
+
+  .content-board-view {
+    @apply flex flex-wrap w-11/12 h-max justify-evenly justify-self-center place-items-center;
+  }
+
+  .content-list-view {
+    @apply flex flex-wrap w-11/12 h-max justify-evenly justify-self-center place-items-center;
+  }
+
+  .text-huge {
+    @apply text-center w-full text-3xl font-bold text-black dark:text-white drop-shadow-xl;
+  }
+
+  .text-high {
+    @apply font-semibold select-none text-black dark:text-white text-lg w-full;
+  }
+
+  .text-medium {
+    @apply font-medium select-none text-black dark:text-white;
+  }
+
+  .text-light {
+    @apply font-light select-none text-black dark:text-white;
+  }
+
+  .para-1 {
+    @apply mt-7 select-none text-black dark:text-white text-center text-lg;
+  }
+
+  .para-2 {
+    @apply mt-3 font-light select-none text-black dark:text-white indent-8 text-sm;
+  }
+
+  .para-3 {
+    @apply text-black/70 dark:text-white/70 font-light text-right italic text-sm;
+  }
+
+  .button-global {
+    @apply border-2 select-none bg-black/10 dark:bg-white/10 hover:bg-black/20 hover:dark:bg-white/20 border-black/50 dark:border-white/50;
+  }
+
+  .button-medium {
+    @apply px-4 py-2 select-none bg-white/20 dark:bg-black/20 hover:bg-white/60 hover:dark:bg-black/60 border-black/50 dark:border-white/50;
+  }
+
+  .button-medium-disabled {
+    @apply px-4 py-2 cursor-not-allowed bg-white/10 dark:bg-black/10 border-black/50 dark:border-white/50;
+  }
+
+  .button-medium-no-hover {
+    @apply px-4 py-2 select-none bg-white/20 dark:bg-black/20 border-black/50 dark:border-white/50;
+  }
+
+  .button-light {
+    @apply px-4 py-2 select-none bg-white/30 dark:bg-black/30 hover:bg-white/50 dark:hover:bg-black/50 border-black/70 dark:border-white/70;
+  }
+
+  .backdrop-lg {
+    @apply backdrop-blur-lg bg-white/50 dark:bg-black/50;
+  }
+
+  .border-medium {
+    @apply border-2 border-slate-400 dark:border-slate-500;
+  }
+
+  .filter-sort-button {
+    @apply flex w-full text-center px-4 py-2 cursor-pointer text-slate-920 dark:text-slate-100 hover:bg-indigo-300 dark:hover:bg-indigo-700
+    text-lg font-medium border-slate-800 dark:border-slate-200;
+  }
+
+  .radio-disabled {
+    @apply select-none cursor-pointer inline-flex justify-between items-center p-5 w-full h-full text-black/50 dark:text-white/50 rounded-lg border border-gray-300/30 dark:border-gray-700/30 bg-gray-300/30 dark:bg-gray-700/30;
+  }
+
+  .radio-positive {
+    @apply select-none cursor-pointer inline-flex justify-between items-center p-5 w-full h-full text-black/50 dark:text-white/50  rounded-lg border button-medium hover:bg-green-300/10 dark:hover:bg-green-700/10 peer-checked:border-green-500 peer-checked:text-green-700 dark:peer-checked:text-green-300 peer-checked:bg-green-500/20;
+  }
+
+  .radio-negative {
+    @apply select-none cursor-pointer inline-flex justify-between items-center p-5 w-full h-full text-black/50 dark:text-white/50  rounded-lg border button-medium hover:bg-red-300/10 dark:hover:bg-red-700/10 peer-checked:border-red-500 peer-checked:text-red-700 dark:peer-checked:text-red-300 peer-checked:bg-red-500/20;
+  }
+
+  .input {
+    @apply button-light rounded-md appearance-none cursor-pointer hover:border-gray-500 focus:outline-none text-black dark:text-white font-medium;
+  }
+
+  .main-overflow {
+    @apply overflow-y-auto overflow-x-hidden no-scrollbar scroll-smooth;
+  }
+}
+
+@layer components {
+  @layer utilities {
+    @variants responsive {
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    }
+  }
+
+  .swiper {
+    width: 92%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .mySwiper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+
+  .light-bg {
+    background: linear-gradient(225deg, #20cc89, #8223d0, #209ac8, #c83820);
+    background-size: 800% 800%;
+
+    -webkit-animation: light-bg-animation 6s ease infinite;
+    -moz-animation: light-bg-animation 6s ease infinite;
+    -o-animation: light-bg-animation 6s ease infinite;
+    animation: light-bg-animation 6s ease infinite;
+  }
+
+  @-webkit-keyframes light-bg-animation {
+    0% {
+      background-position: 0% 15%;
+    }
+    50% {
+      background-position: 100% 86%;
+    }
+    100% {
+      background-position: 0% 15%;
+    }
+  }
+  @-moz-keyframes light-bg-animation {
+    0% {
+      background-position: 0% 15%;
+    }
+    50% {
+      background-position: 100% 86%;
+    }
+    100% {
+      background-position: 0% 15%;
+    }
+  }
+  @-o-keyframes light-bg-animation {
+    0% {
+      background-position: 0% 15%;
+    }
+    50% {
+      background-position: 100% 86%;
+    }
+    100% {
+      background-position: 0% 15%;
+    }
+  }
+  @keyframes light-bg-animation {
+    0% {
+      background-position: 0% 15%;
+    }
+    50% {
+      background-position: 100% 86%;
+    }
+    100% {
+      background-position: 0% 15%;
+    }
+  }
+
+  .dark-bg {
+    background: linear-gradient(225deg, #0b5438, #340d54, #0b3b4d, #50160d);
+    background-size: 800% 800%;
+
+    -webkit-animation: dark-bg-animation 2s ease infinite;
+    -moz-animation: dark-bg-animation 2s ease infinite;
+    -o-animation: dark-bg-animation 2s ease infinite;
+    animation: dark-bg-animation 2s ease infinite;
+  }
+
+  @-webkit-keyframes dark-bg-animation {
+    0% {
+      background-position: 0% 15%;
+    }
+    50% {
+      background-position: 100% 86%;
+    }
+    100% {
+      background-position: 0% 15%;
+    }
+  }
+  @-moz-keyframes dark-bg-animation {
+    0% {
+      background-position: 0% 15%;
+    }
+    50% {
+      background-position: 100% 86%;
+    }
+    100% {
+      background-position: 0% 15%;
+    }
+  }
+  @-o-keyframes dark-bg-animation {
+    0% {
+      background-position: 0% 15%;
+    }
+    50% {
+      background-position: 100% 86%;
+    }
+    100% {
+      background-position: 0% 15%;
+    }
+  }
+  @keyframes dark-bg-animation {
+    0% {
+      background-position: 0% 15%;
+    }
+    50% {
+      background-position: 100% 86%;
+    }
+    100% {
+      background-position: 0% 15%;
+    }
+  }
+
+  .video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
