@@ -42,6 +42,8 @@ function AuctionModal({ address, nft, nftInfo, requests, setAuctionModal }) {
     }, 1000);
     const duringAuction = +nftInfo[7] < now && now < +nftInfo[8] && requests.length > 1;
 
+    console.log(nftInfo, nftInfo[1] / 10, step)
+
     return (
         <div className='fixed mt-20 w-[60%] h-[70%] top-[10%] left-[20%] rounded-2xl z-50 backdrop-lg'>
             <svg className="absolute top-0 right-0 m-4 h-8 w-8 fill-black dark:fill-white cursor-pointer z-50" onClick={() => setAuctionModal(false)}
